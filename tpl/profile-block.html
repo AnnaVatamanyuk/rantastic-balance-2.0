@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=2.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Runtastic Balance</title>
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <div class="profile-block">-->
+        <div class="tab-background d-f ai-c">
+            <img class="arrow-back" src="./../images/arrow-white.svg" alt="image description">
+            <p>Профиль</p>
+        </div>
+        <div class="change-profile">
+            <div class="container d-f ai-c jc-c fd-c">
+                <div class="d-f ai-c jc-c">
+                    <div class="profile-photo"></div>
+                    <div class="profile-personal-data d-f ai-c fd-c">
+                        <div class="profile-name-change">
+                            <label for="profile-name">Имя</label>
+                            <input id="profile-name" class="form-control" type="text" placeholder="Дмитро">
+                        </div>
+                        <div class="profile-name-change">
+                            <label for="profile-first-name">Фамилия</label>
+                            <input id="profile-first-name" class="form-control" type="text" placeholder="Соловка">
+                        </div>
+                    </div>
+                </div>
+                <div class="gender">
+                    <input id="gender-man" type="radio" name="gender" value="man" checked="checked">
+                    <label class="choose-man" for="gender-man">Мужской</label>
+                    <input id="gender-woman" type="radio" name="gender" value="woman">
+                    <label class="choose-woman" for="gender-woman">Женский</label>
+                </div>
+                <div>
+                    <div class="other-personal-data">
+                        <label for="profile-email">email</label>
+                        <input id="profile-email" class="form-control" type="email"
+                               placeholder="dmytro.solovka@gmail.com">
+                    </div>
+                    <div class="other-personal-data">
+                        <label for="profile-country">Страна</label>
+                        <select id="profile-country" class="form-control">
+                            <option>Ukraine</option>
+                            <option>Russian</option>
+                            <option>Poland</option>
+                            <option>France</option>
+                        </select>
+                    </div>
+                    <div class="label-position other-personal-data">
+                        <label> Дата рождения</label>
+                        <input type="text" autocomplete="off" name="person-birthday" data-birthday="modal-data-birthday"
+                               class="form-control input-param" placeholder="00.00.0000"/>
+                        <div class="overlay modal-data-birthday">
+                            <div class="modal-data d-f fd-c jc-sb">
+                                <p class="p">Дата рождения</p>
+                                <div class="overlay-block d-f jc-c ai-c">
+                                    <div style="width: 70px" id="day-picker"></div>
+                                    <div style="width: 100px" id="month-picker"></div>
+                                    <div style="width: 100px" id="year-picker"></div>
+                                </div>
+                                <div class="box-confirm-birthday d-f jc-fe">
+                                    <button class="button-form button-cancel">Отменa</button>
+                                    <button class="button-form button-birthday button-confirm">Выбрать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="label-position other-personal-data">
+                        <label>Рост</label>
+                        <input data-height="modal-data-height" autocomplete="off" type="text" placeholder="100cm"
+                               name="person-height" class="input-param form-control">
+                        <div class="overlay modal-data-height">
+                            <div class="modal-data d-f fd-c jc-sb">
+                                <p class="p">Рост</p>
+                                <div class="overlay-block ai-c d-f jc-c">
+                                    <div style="width:90px" id="height-picker"></div>
+                                    <span class="metrics-sm">cm</span>
+                                </div>
+                                <div class="modal-data-footer box-confirm-height d-f jc-sb">
+                                    <button type="button" class="button-form metrics-fut">ФУТЫ</button>
+                                    <div>
+                                        <button class="button-form button-cancel">отменa</button>
+                                        <button class="button-form button-height button-confirm">выбрать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="label-position other-personal-data">
+                        <label>текущий вес </label>
+                        <input data-weight="modal-data-weight" autocomplete="off" type="text" name="person-weight"
+                               placeholder="40 kg" class="input-param form-control">
+                        <div class="overlay modal-data-weight">
+                            <div class="modal-data d-f fd-c jc-sb">
+                                <p class="p">Вес</p>
+                                <div class="overlay-block d-f ai-c jc-c">
+                                    <div style="width: 140px" id="kg-picker"></div>
+                                    <span class="metrics-kg">kg</span>
+                                    <div style="width: 90px" id="g-picker"></div>
+                                    <span class="metrics-g">g</span>
+                                </div>
+                                <div class="modal-data-footer box-confirm-weight d-f jc-sb">
+                                    <button type="button" class="button-form metrics-funt">ФУНТЫ</button>
+                                    <div>
+                                        <button class="button-form button-cancel">отменa</button>
+                                        <button class="button-form button-weight button-confirm">выбрать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

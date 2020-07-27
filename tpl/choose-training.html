@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=2.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Runtastic Balance</title>
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <div class="choose-training">
+        <div class="tab-background d-f jc-sb ai-c">
+            <div>
+                <img class="arrow-back" src="./../images/arrow-white.svg" alt="image description">
+                <p>Добавить тренировку</p>
+            </div>
+            <img class="add-training" src="./../images/check-solid.svg" alt="image description">
+        </div>
+        <div class="choose-training-block">
+            <div class="container d-f fd-c ai-c">
+                <h4>Выберете тип тренировки</h4>
+                <div class="type-training d-f">
+                    <div class="box d-f fd-c ai-c">
+                        <input type="checkbox" id="running">
+                        <span class="check"></span>
+                        <label for="running"><img src="./../images/running-solid.svg" alt="image description"></label>
+                        <span>Бег</span>
+                    </div>
+                    <div class="box d-f fd-c ai-c">
+                        <input type="checkbox" id="walking">
+                        <span class="check"></span>
+                        <label for="walking"><img src="./../images/walking-solid.svg" alt="image description"></label>
+                        <span>Ходьба</span>
+                    </div>
+                    <div class="box d-f fd-c ai-c">
+                        <input type="checkbox" id="cycling">
+                        <span class="check"></span>
+                        <label for="cycling"><img src="./../images/bicycle-solid.svg" alt="image description"></label>
+                        <span>Велосипед</span>
+                    </div>
+                    <div class="box d-f fd-c ai-c">
+                        <a href="training-list.html" class="more-training"></a>
+                        <span>Ёще</span>
+                    </div>
+                </div>
+                <div class="training-param d-f fd-c">
+                    <div class="label-position">
+                        <label>Длительность</label>
+                        <input type="text" autocomplete="off" name="person-time" data-birthday="modal-time" class="form-control input-param" placeholder="00:00:00" />
+                        <div class="overlay modal-time">
+                            <div class="modal-data d-f fd-c jc-sb">
+                                <p class="p">Длительность</p>
+                                <div class="overlay-block d-f jc-c ai-c">
+                                    <div style="width: 70px" id="hour-picker"></div>
+                                    <div style="width: 100px" id="minute-picker"></div>
+                                    <div style="width: 100px" id="second-picker"></div>
+                                </div>
+                                <div class="box-confirm-time d-f jc-fe">
+                                    <button class="button-form button-cancel">Отменa</button>
+                                    <button class="button-form button-time button-confirm">Выбрать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="label-position">
+                        <label>Дистанция</label>
+                        <input type="text" autocomplete="off" name="person-distance" data-birthday="modal-distance" class="form-control input-param" placeholder="0.00 km" />
+                        <div class="overlay modal-distance">
+                            <div class="modal-data d-f fd-c jc-sb">
+                                <p class="p">Дистанция</p>
+                                <div class="overlay-block d-f jc-c ai-c">
+                                    <div style="width: 70px" id="km-picker"></div>
+                                    <div style="width: 100px" id="m-picker"></div>
+                                </div>
+                                <div class="box-confirm-time d-f jc-fe">
+                                    <button class="button-form button-cancel">Отменa</button>
+                                    <button class="button-form button-distance button-confirm">Выбрать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="label-position">
+                        <label>Калории</label>
+                        <input type="text" autocomplete="off" name="person-calories" data-birthday="modal-calories" class="form-control input-param" placeholder="0 cal" />
+                        <div class="overlay modal-calories">
+                            <div class="modal-data d-f fd-c jc-sb">
+                                <p class="p">Калории</p>
+                                <div class="overlay-block d-f jc-c ai-c">
+                                    <div style="width: 100px" id="calories-picker"></div>
+                                </div>
+                                <div class="box-confirm-time d-f jc-fe">
+                                    <button class="button-form button-cancel">Отменa</button>
+                                    <button class="button-form button-calories button-confirm">Выбрать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="label-position">
+                        <label>Время</label>
+                        <input type="text" autocomplete="off" name="person-timer" data-time="modal-time" class="form-control input-param" placeholder="00:00" />
+                        <div class="overlay modal-timer">
+                            <div class="modal-data d-f fd-c jc-sb">
+                                <p class="p">Время</p>
+                                <div class="overlay-block d-f jc-c ai-c">
+                                    <div style="width: 100px" id="minute-picker_time"></div>
+                                    <div style="width: 100px" id="second-picker_time"></div>
+                                </div>
+                                <div class="box-confirm-time d-f jc-fe">
+                                    <button class="button-form button-cancel">Отменa</button>
+                                    <button class="button-form button-time_done button-confirm">Выбрать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

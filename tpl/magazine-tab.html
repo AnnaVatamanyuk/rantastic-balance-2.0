@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=2.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Runtastic Balance</title>
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <section class="tab-section">
+        <div class="container">
+            <div id="tabs-block_holder" class="d-f jc-c">
+                <div class="tab-fixed">
+                    <ul class="tabs-list d-f ai-c">
+                        <li >
+                            <a class="d-f fd-c ai-c" href="news-tab.html"><img src="./../images/newspaper-regular.svg" alt="image descrition">Новости</a>
+                        </li>
+                        <li class="magazine">
+                            <a href="magazine-tab.html" class="d-f fd-c ai-c"><img src="./../images/book.svg" alt="image descrition">Журнал</a>
+                        </li>
+                        <li>
+                            <a href="add-program.html" class="add-program d-f ai-c jc-c"><img src="./../images/plus-solid.svg" alt="image descrition"></a>
+                        </li>
+                        <li class="programs">
+                            <a href="programs.html" class="d-f fd-c ai-c"><img src="./../images/clipboard-list-solid.svg" alt="image descrition">Программы</a>
+                        </li>
+                        <li>
+                            <a href="profile.html" class="d-f fd-c ai-c"><img src="./../images/user-profile-svgrepo-com.svg" alt="image descrition">Профиль</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tabs-block">
+                    <div id="magazine" class="tab-holder d-f fw-w ">
+                        <div id="tabs-days">
+                            <div class="tabs-days_fixed">
+                                <div class="container d-f jc-sb">
+                                    <h3>Журнал</h3>
+                                    <div class="d-f">
+                                        <input type="text" id="datepicker">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container tabs-block">
+                                <div class="tab-holder">
+                                    <div class="d-f ai-c fd-c jc-c">
+                                        <div class="calories-left d-f fd-c ai-c jc-c">
+                                            <p>2646</p>
+                                            <span>Осталось калорий</span>
+                                        </div>
+                                        <div class="norms-calories d-f jc-sb ai-c">
+                                            <div class="carbohydrates d-f fd-c">
+                                                <div class="carbohydrates-text">
+                                                    <p>Углеводы</p>
+                                                    <span class="used-calories">0г</span><span> / 364г</span>
+                                                </div>
+                                                <input type="range" min="0" max="364" step="1">
+                                            </div>
+                                            <div class="fat d-f fd-c">
+                                                <div class="fat-text">
+                                                    <p>Белки</p>
+                                                    <span class="used-calories">0г</span><span> / 99г</span>
+                                                </div>
+                                                <input type="range" min="0" max="99" step="1">
+                                            </div>
+                                            <div class="proteins d-f fd-c">
+                                                <div class="proteins-text">
+                                                    <p>Жиры</p>
+                                                    <span class="used-calories">0г</span><span> / 88г</span>
+                                                </div>
+                                                <input type="range" min="0" max="88" step="1">
+                                            </div>
+                                        </div>
+                                        <div class="schedule-eat">
+                                            <ul>
+                                                <li class="breakfast d-f jc-sb ai-c">
+                                                    <div class="schedule-eat_text">
+                                                        <h3>Завтрак</h3>
+                                                        <p>Для тебя оптимально 662-926 калорий</p>
+                                                    </div>
+                                                    <div class="add-eat">
+                                                        <a href="add-program.html"><img src="./../images/plus-solid.svg" alt="image description"></a>
+                                                    </div>
+                                                </li>
+                                                <li class="lunch d-f jc-sb ai-c">
+                                                    <div class="schedule-eat_text">
+                                                        <h3>Обед</h3>
+                                                        <p>Для тебя оптимально 794-1059 калорий</p>
+                                                    </div>
+                                                    <div class="add-eat">
+                                                        <a href="add-program.html"><img src="./../images/plus-solid.svg" alt="image description"/></a>
+                                                    </div>
+                                                </li>
+                                                <li class="dinner d-f jc-sb ai-c">
+                                                    <div class="schedule-eat_text">
+                                                        <h3>Ужин</h3>
+                                                        <p>Для тебя оптимально 662-926 калорий</p>
+                                                    </div>
+                                                    <div class="add-eat">
+                                                        <a href="add-program.html"><img src="./../images/plus-solid.svg" alt="image description"></a>
+                                                    </div>
+                                                </li>
+                                                <li class="snack d-f jc-sb ai-c">
+                                                    <div class="schedule-eat_text">
+                                                        <h3>Перекус</h3>
+                                                        <p>Для тебя оптимально 0-529 калорий</p>
+                                                    </div>
+                                                    <div class="add-eat">
+                                                        <a href="add-program.html"><img src="./../images/plus-solid.svg" alt="image description"></a>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="calories-burned">
+                                            <h3>Потраченые калории</h3>
+                                            <span>0 калорий</span>
+                                            <p>Тренируйся вместе с приложениями Runtastic или добавляй активность вручную, чтобы позволить себе больше калорий!</p>
+                                            <div class="d-f">
+                                                <div class="training-check">
+                                                    <img src="./../images/running-solid.svg">
+                                                </div>
+                                                <div class="training-check">
+                                                    <img src="./../images/walking-solid.svg">
+                                                </div>
+                                                <div class="training-check">
+                                                    <img src="./../images/bicycle-solid.svg">
+                                                </div>
+                                            </div>
+                                            <div class="choose-workout">
+                                                <a href="choose-training.html">Добавить тренировку</a>
+                                            </div>
+                                        </div>
+                                        <div class="purpose">
+                                            <h3>Цель</h3>
+                                            <p>Правильно питаться</p>
+                                            <div class="d-f">
+                                                <div class="current-weight">
+                                                    <p>Текущий</p>
+                                                    <span>75</span>
+                                                </div>
+                                                <div class="desired-weight">
+                                                    <p>Цель</p>
+                                                    <span>75</span>
+                                                </div>
+                                            </div>
+                                            <p>Вес в кг</p>
+                                            <button class="btn">Обновить вес</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

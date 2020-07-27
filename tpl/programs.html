@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=2.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Runtastic Balance</title>
+    <link href="../css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <section class="tab-section">
+        <div class="container">
+            <div id="tabs-block_holder" class="d-f jc-c">
+                <div class="tab-fixed">
+                    <ul class="tabs-list d-f ai-c">
+                        <li >
+                            <a class="d-f fd-c ai-c" href="news-tab.html"><img src="./../images/newspaper-regular.svg" alt="image descrition">Новости</a>
+                        </li>
+                        <li class="magazine">
+                            <a href="magazine-tab.html" class="d-f fd-c ai-c"><img src="./../images/book.svg" alt="image descrition">Журнал</a>
+                        </li>
+                        <li>
+                            <a href="add-program.html" class="add-program d-f ai-c jc-c"><img src="./../images/plus-solid.svg" alt="image descrition"></a>
+                        </li>
+                        <li class="programs">
+                            <a href="programs.html" class="d-f fd-c ai-c"><img src="./../images/clipboard-list-solid.svg" alt="image descrition">Программы</a>
+                        </li>
+                        <li>
+                            <a href="profile.html" class="d-f fd-c ai-c"><img src="./../images/user-profile-svgrepo-com.svg" alt="image descrition">Профиль</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tabs-block">
+                    <div id="programs" class="tab-holder d-f fd-c fw-w ">
+                        <div class="tab-background d-f ai-c">
+                            <p>Программа</p>
+                        </div>
+                        <div class="good-balance ">
+                            <div class="container">
+                                <h3>Здоровый баланс</h3>
+                                <div class="good-balance_text d-f fd-c">
+                                    <span>Начало программы 15 июня 2020г.</span>
+                                    <span>Пропорции макроэлементов</span>
+                                </div>
+                                <div class="diagram d-f ai-c">
+                                    <canvas id="myCanvas"></canvas>
+                                    <div id="myLegend"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="path-to-success">
+                            <div class="container">
+                                <h3>Твой путь к успеху</h3>
+                                <p>Ключ к здоровому образу жизни - оптимальный баланс. Питайтесь регулярно - это поможет тебе контролировать голод и сократить лишний вес.
+                                    Натуральные продукты без обработки могут полностью обезпечить твой рацион. Питайся сезонными продуктам, характерными для твоей местности, чтобы дополнить рацион свежими, яркими вкусами</p>
+                                <p>Сложные углеводы, вроде цельнозерновых продуктов и бобовых, помогут тебе ощутить сытость и дарят организму полезную клетчатку. Качественные белки из нежирного мяса,
+                                    яиц, молочных продуктов и бобовых помогут зарядить мышцы. Растительное масло, авокадо и орехи позволят телу насытитца полезными жирными кислотами. Свежие овощи и фрукты дополнят рацион и привнесут цвет и вкус любому блюду.</p>
+                                <p>Слудует выпивать по 1.5-2 л безкалорийной житкости в день(воды или чая без сахара). Также следует пить больше, когдатвоя тренировка длится более часа - выпей 0.5-1 л воды сверх нормы, чтобы компенсировать потери.</p>
+                            </div>
+                        </div>
+                        <div class="your-choose">
+                            <div class="container">
+                                <h3>Твой выбор</h3>
+                                <p>10 лучших продуктов:</p>
+                                <ul class="categories-product d-f jc-sb">
+                                    <li class="d-f fd-c ai-c">
+                                        <div class="product-img"><img src="./../images/food-vagatable.jpg" alt="image direction"></div>
+                                        <p>Фруктыи овощи</p>
+                                    </li>
+                                    <li class="d-f fd-c ai-c">
+                                        <div class="product-img"><img src="./../images/food-chicken.jpg" alt="image direction"></div>
+                                        <p>Курица</p>
+                                    </li>
+                                    <li class="d-f fd-c ai-c">
+                                        <div class="product-img"><img src="./../images/food-fish.jpg" alt="image direction"></div>
+                                        <p>Рыба</p>
+                                    </li>
+                                    <li class="d-f fd-c ai-c">
+                                        <div class="product-img"><img src="./../images/food-yogurt.jpg" alt="image direction"></div>
+                                        <p>Белый йогурт</p>
+                                    </li>
+                                    <li class="d-f fd-c ai-c">
+                                        <div class="product-img"><img src="./../images/food-eggs.jpg" alt="image direction"></div>
+                                        <p>Яйца</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="good-bad-product">
+                            <div class="container">
+                                <p>Больше этих продуктов</p>
+                                <ul class="good-product">
+                                    <li>Фрукты</li>
+                                    <li>Овощи</li>
+                                    <li>Бобовые</li>
+                                    <li>Цельнозерновые продукты</li>
+                                    <li>Молочные продукты</li>
+                                    <li>Нежирное мясо</li>
+                                    <li>Рыба</li>
+                                    <li>Яйца</li>
+                                    <li>Орежи и семена</li>
+                                    <li>Масла(льняное и оливковое)</li>
+                                </ul>
+                                <p>Меньше этих продуктов</p>
+                                <ul class="bad-product">
+                                    <li>Выпечка из белой муки</li>
+                                    <li>Сладкое</li>
+                                    <li>Жареное</li>
+                                    <li>Фастфуд</li>
+                                    <li>Газированные напитки</li>
+                                    <li>Фруктовые соки</li>
+                                    <li>Алкоголь</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="additional-programs">
+                            <div class="container">
+                                <h3>Дополнительные программы</h3>
+                                <div class="regular d-f ai-c slider">
+                                    <div class="slide slide-2">
+                                        <div class="slide-img">
+                                            <img src="./../images/programm-foto2.jpg" alt="image description">
+                                        </div>
+                                        <h4>Персональная програма</h4>
+                                        <p>Настрой дневную норму потребления калорий и соотношения макроэлементов</p>
+                                    </div>
+                                    <div class="slide slide-1">
+                                        <div class="slide-img">
+                                            <img src="./../images/food-fish.jpg" alt="image description">
+                                        </div>
+                                        <h4>Улутшенная кето программа</h4>
+                                        <p>Настрой дневную норму потребления калорий и соотношения макроэлементов</p>
+                                    </div>
+                                    <div class="slide slide-3">
+                                        <div class="slide-img">
+                                            <img src="./../images/food-yogurt.jpg" alt="image description">
+                                        </div>
+                                        <h4>Правильное питание</h4>
+                                        <p>Настрой дневную норму потребления калорий и соотношения макроэлементов</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
+

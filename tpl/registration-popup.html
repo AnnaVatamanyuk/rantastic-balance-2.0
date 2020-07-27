@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=2.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Runtastic Balance</title>
+    <link href="./../css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <section class="registration-popup">
+        <div class="registration-popup_title d-f ai-c">
+            <img class="arrow-back" src="./../images/arrow-white.svg" alt="image description">
+            <p>Регистрация</p>
+        </div>
+        <div class="container">
+            <form class="d-f fd-c ai-c jc-sb form-authorization">
+                <div>
+                    <div class="personal-data d-f jc-c ai-c">
+                        <div class="registration-photo">
+                            <img id="blah" src="" width="50px" height="50px" />
+                            <input type="file" name="AddImage" id="AddImage" accept="image/*" />
+                            <label for="AddImage"><img src="./../images/camera-solid.svg" alt="images description"></label>
+                        </div>
+                        <div class="registration-name d-f fd-c">
+                            <input class="form-control" id="name" type="text" placeholder="Имя">
+                            <input class="form-control" id="first-name" type="text" placeholder="Фамилия">
+                        </div>
+                    </div>
+                    <div class="registration-auth_data d-f fd-c">
+                        <input id="email" class="form-control email" type="email" placeholder="Email">
+                        <input  id="password" class="form-control password" type="password" placeholder="Пароль">
+                    </div>
+                </div>
+                <a href="./home.html" class="btn btn-next submit">Продолжить</a>
+            </form>
+        </div>
+    </section>
+</div>
+</body>
+</html>
