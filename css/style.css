@@ -1041,6 +1041,7 @@ ul{
 
 .tab-background img{
     width: 20px;
+    height: 20px;
 }
 
 .tabs-block{
@@ -1088,7 +1089,8 @@ ul{
     margin-bottom: 10px;
 }
 
-.news-text a{
+.news-text a,
+.news-text span{
     color: #69B22C;
     font-size: 16px;
     text-transform: uppercase;
@@ -1242,6 +1244,8 @@ ul{
 .snack:before{
     position: absolute;
     width: 20px;
+    left: 0;
+    top: 0;
 }
 
 .breakfast:before{
@@ -1271,6 +1275,11 @@ ul{
 .schedule-eat_text p{
     color: #939393;
     font-size: 14px;
+}
+
+.add-eat {
+    position: absolute;
+    right: 0;
 }
 
 .add-eat img{
@@ -2449,14 +2458,17 @@ ul{
 }
 
 .type-training .box:nth-child(1) label img{
-    width: 16px;
+    width: 20px;
+    height: 20px;
 }
 
 .type-training .box:nth-child(2) label img{
-    width: 14px;
+    width: 15px;
+    height: 15px;
 }
 .type-training .box:nth-child(3) label img{
     width: 28px;
+    height: 28px;
 }
 
 .type-training .more-training{
